@@ -28,7 +28,7 @@ const history = createBrowserHistory();
 // Build the middleware for intercepting and dispatching navigation actions
 const routerMiddleware = createRouterMiddleware(history);
 
-const middleware = [routerMiddleware, thunk, /* sync, */ logger];
+const middleware = [routerMiddleware, thunk,  sync,  logger];
 
 const persistedState = JSON.parse(localStorage.getItem('@@persistedState'));
 

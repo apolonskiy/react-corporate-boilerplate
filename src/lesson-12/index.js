@@ -1,2 +1,2 @@
-import './routing-with-redux/example-1';
+import './routing-with-redux/example-11';
 import '../theme/reset';

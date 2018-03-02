@@ -38,5 +38,5 @@ button4.addEventListener('click', () =>
 );
 button5.addEventListener('click', () => history.goForward());
 
-// const unblock = history.block('Are you sure you want to leave this page?');
-// unblock();
+const unblock = history.block('Are you sure you want to leave this page?');
+unblock();

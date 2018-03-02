@@ -1,2 +1,2 @@
-import './react-with-redux/example-1';
+import './react-with-redux/example-14';
 import '../theme/reset';

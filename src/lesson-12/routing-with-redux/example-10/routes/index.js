@@ -13,9 +13,9 @@ export default class Example extends Component {
     render () {
         return (
             <Fragment>
-                <Navigation />
-                {/*<Route path = '/' component = { Navigation } /> */}
-                {/*<Route path = '/' render = { ({ location }) => <Navigation location = { location } /> } />*/}
+                {/*<Navigation />*/}
+                {/*<Route path = '/' component = { Navigation } />*/}
+                <Route path = '/' render = { ({ location }) => <Navigation location = { location } /> } />
                 <Switch>
                     <Route exact component = { Home } path = '/home' />
                     <Route exact component = { FAQ } path = '/faq' />

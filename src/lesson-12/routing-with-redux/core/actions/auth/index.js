@@ -9,6 +9,6 @@ export const login = () => ({
 
 export const logout = () => (dispatch) => {
     dispatch({ type: LOGOUT });
-    // console.log('•λ•', replace('/login'));
-    dispatch(replace('/login'));
+    console.log('•λ•', replace('/login'));
+    // dispatch(replace('/login'));
 };

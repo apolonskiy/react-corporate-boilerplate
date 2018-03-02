@@ -7,7 +7,7 @@ import { NavLink, withRouter } from 'react-router-dom';
 import Styles from './styles';
 
 // @withRouter
-// @connect()
+@connect()
 class Navigation extends Component {
     // shouldComponentUpdate (nProps, nState) {
     //     return (
@@ -39,5 +39,5 @@ class Navigation extends Component {
     }
 }
 
-export default connect()(Navigation);
-// export default withRouter(connect()(Navigation));
+// export default connect()(Navigation);
+export default withRouter(connect()(Navigation));

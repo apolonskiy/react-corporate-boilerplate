@@ -11,6 +11,8 @@ export default class Post extends Component {
     render () {
         const { comment } = this.props;
 
+        console.log(comment)
+
         return (
             <li>
                 <button onClick = { this._deletePost }>Delete post</button>

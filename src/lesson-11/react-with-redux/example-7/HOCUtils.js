@@ -13,7 +13,7 @@ const withLogging = (Injectable) => {
 
             report();
 
-            this.log = setInterval(report, 1000);
+            this.log = setInterval(report, 10000);
         }
 
         componentWillUnmount () {
