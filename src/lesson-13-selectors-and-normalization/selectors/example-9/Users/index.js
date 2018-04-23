@@ -27,13 +27,13 @@ class Users extends Component {
 const mapStateToProps = (state) => {
     log('MSTP is called: Users', '38dddd');
 
-    // console.time('• selectUsers selector •');
-    // const users = selectUsers(state);
-    // console.timeEnd('• selectUsers selector •');
+    console.time('• selectUsers selector •');
+    const users = selectUsers(state);
+    console.timeEnd('• selectUsers selector •');
 
-    console.time('• selectUsersMemoized selector •');
-    const users = selectUsersMemoized(state);
-    console.timeEnd('• selectUsersMemoized selector •');
+    // console.time('• selectUsersMemoized selector •');
+    // const users = selectUsersMemoized(state);
+    // console.timeEnd('• selectUsersMemoized selector •');
 
     return { users };
 };

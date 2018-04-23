@@ -12,15 +12,13 @@ import Posts from '../Posts';
 import Users from '../Users';
 
 class App extends Component {
-    render () {
-        const { genderFilter } = this.props;
-
+    render() {
         log('render method is called: App', 'afd947');
 
         return (
             <section>
                 <Counter />
-                {/* <Users />*/ }
+                {/* <Users />*/}
                 {/* <Posts byGenderOf = 'males' instance = 'males' /> */}
                 {/* <Posts byGenderOf = 'males' instance = 'males' /> */}
                 {/* <Posts byGenderOf = 'females' instance = 'females' /> */}
@@ -41,11 +39,11 @@ class App extends Component {
 *    - Если хотя-бы одно ЗНАЧЕНИЕ изменилось по ссылке, компонент connect() перерендеривает оборачиваемым компонент (App);
 *    - Если все ЗНАЧЕНИЯ НЕ ИЗМЕНИЛИСЬ, компонент connect() останавливаеться, препятствуя запуску механизма reconciliation React.
 */
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     log('MSTP is called: App', 'afd947');
 
     return {
-        counter: state.users,
+        users: state.users
     };
 };
 

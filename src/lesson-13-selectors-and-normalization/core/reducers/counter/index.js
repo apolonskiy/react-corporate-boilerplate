@@ -1,6 +1,5 @@
 // Instruments
 import { FAKE_INCREMENT, INCREMENT, DECREMENT } from '../../actions/counter/types';
-import { random } from 'faker';
 
 const initialState = 0;
 
